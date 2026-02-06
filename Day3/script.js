@@ -11,6 +11,7 @@ let emp = {
 
 console.log(emp.empDetails());
 
+
 // var allow dublicates
 // var is global and function scope 
 // let and const have global, function and block scope
