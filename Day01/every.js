@@ -1,7 +1,7 @@
-// let students = [{id:101,name:'Rehan',gender:'Male',course:'JFS'},
-//                 {id:101,name:'Maaz',gender:'Male',course:'PFS'},
-//                 {id:101,name:'Zubair',gender:'Male',course:'JFS'}
-// ]
+let students = [{id:101,name:'Rehan',gender:'Male',course:'JFS'},
+                {id:101,name:'Maaz',gender:'Male',course:'PFS'},
+                {id:101,name:'Zubair',gender:'Male',course:'JFS'}
+]
 
 
 // checking all gender male or not
@@ -29,12 +29,17 @@
 //     obj.name.includes('a')
 // ));
 
+// console.log(students.every(({name})=>{
+//     name.includes('a')
+// }));
+
+
 // chekcing price of products more than 500 or not
 
-let products = [{id:101,title:'shirt',price:1000,qty:1},
-                {id:102,title:'tshirt',price:2000,qty:2},
-                {id:103,title:'shirt',price:5000,qty:1}
-]
+// let products = [{id:101,title:'shirt',price:1000,qty:1},
+//                 {id:102,title:'tshirt',price:2000,qty:2},
+//                 {id:103,title:'shirt',price:5000,qty:1}
+// ]
 
 // console.log(products.every(obj => obj.price>=500));
 
