@@ -10,15 +10,15 @@ const StudentTable = () => {
                 </tr>
             </thead>
             <tbody>
-                <StudentRow id={101} name="Kabir" />
-                <StudentRow />
+                {/* <StudentRow id={101} name="Kabir" />
+                <StudentRow /> */}
 
-                {/* {
+                {
                     studentdata.map(({id,name}) => (
                         <StudentRow id={id} name={name}
                         />
                     ))
-                } */}
+                }
             </tbody>
         </table>
     )
