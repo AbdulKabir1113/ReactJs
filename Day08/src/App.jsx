@@ -12,6 +12,9 @@ import StateEg4 from './Componontes/Satate/StateEg4'
 import StateEg5 from './Componontes/Satate/StateEg5'
 import StateEg6 from './Componontes/Satate/StateEg6'
 import StateEg7 from './Componontes/Satate/StateEg7'
+import StateEg8 from './Componontes/Satate/StateEg8'
+import StateEg9 from './Componontes/Satate/StateEg9'
+import StateEg10 from './Componontes/Satate/StateEg10'
 
 function App() {
   let num = 100
@@ -32,6 +35,12 @@ function App() {
       <StateEg6 />
       <hr />
       <StateEg7/>
+      <hr />
+      <StateEg8 />
+      <hr />
+      <StateEg9 />
+      <hr />
+      <StateEg10 />
     </>
   )
 }

@@ -182,3 +182,10 @@
     border-right-color: var(--border);
   }
 } */
+
+.card{
+  border: 3px solid red;
+  padding: 20px;
+  
+  justify-content: center;
+}
