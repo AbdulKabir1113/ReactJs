@@ -1,17 +1,28 @@
-
 import './App.css'
 import Nav from './Components/Nav'
 import Cards from './Components/Cards'
 import Footer from './Components/Footer'
+import Cart from './Components/Cart'
 import { useState } from 'react'
 
 function App() {
-   const [cartCount, setCartCount] = useState(0);
+
+  const [CartProducts, setCartProducts] = useState([])
 
   return (
     <>
-      <Nav cartCount={cartCount} />
-      <Cards cartCount={cartCount} setCartCount={setCartCount} />
+      <Nav CartProducts={CartProducts} />
+
+      <Cards
+        CartProducts={CartProducts}
+        setCartProducts={setCartProducts}
+      />
+
+      <Cart
+        CartProducts={CartProducts}
+        setCartProducts={setCartProducts}
+      />
+
       <Footer />
     </>
   )
