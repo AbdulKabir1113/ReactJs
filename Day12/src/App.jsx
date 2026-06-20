@@ -6,6 +6,7 @@ import ControlledEg4 from './Components/ControlledEg4'
 import ControlledEg5 from './Components/ControlledEg5'
 import ControlledEg6 from './Components/ControlledEg6'
 import ControlledEg7 from './Components/ControlledEg7'
+import ControlledEg8 from './Components/ControlledEg8'
 import './App.css'
 
 function App() {
@@ -13,13 +14,15 @@ function App() {
 
   return (
     <>
-      <ControlledEg1 />
+      {/* <ControlledEg1 />
       <ControlledEg2 />
       <ControlledEg3 />
       <ControlledEg4 />
       <ControlledEg5 />
-      <ControlledEg6 />
-      <ControlledEg7/>
+      <ControlledEg6 /> */}
+      <ControlledEg7 /> 
+
+      <ControlledEg8 />
     </>
   )
 }
