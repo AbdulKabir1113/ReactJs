@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "title": "sd",
+      "views": "sd",
+      "id": "yVjyHLK4xrM"
+    },
+    {
+      "title": "a another title",
+      "views": "500",
+      "id": "r8racdUp3f8"
+    },
+    {
+      "title": "abc",
+      "views": "560",
+      "id": "RkSSMaERspk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
