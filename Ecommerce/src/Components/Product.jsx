@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect } from 'react'
+import { myContext } from "../App";
+
 
 const Product = () => {
+let {cartProducts, setCardProducts}  = useContext(myContext)
  const [state, setState] = useState({
   id: "",
   title: "",
@@ -29,6 +32,20 @@ const Product = () => {
 
   useEffect(()=>{fetchApi()},[])
 
+  let handleAddCart = ()=>{
+
+    let bool = cartProducts.some(obj=> obj.id == state.id)
+
+    if(bool == false){
+    setCardProducts([...cartProducts, {...state,quantity : 1}])
+    console.log(cartProducts);
+    }
+    else{
+      alert("Already present in the cart")
+    }
+    
+  }
+
   return (
      <div className="flex justify-around flex-wrap gap-10 m-10">
       
@@ -43,7 +60,7 @@ const Product = () => {
 
           <p className="mt-2 text-yellow-500 font-semibold">Rating : ⭐⭐⭐ {state.rating.rate} ({state.rating.count} Reviews)</p>
        
-          <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+          <button onClick={()=>{handleAddCart()}} className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
           </div>
         </div>
   

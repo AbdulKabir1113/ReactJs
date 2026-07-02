@@ -8,6 +8,7 @@ import Chief from './Components/Chief'
 import Product from './Components/Product'
 import {BrowserRouter , Routes, Route} from 'react-router-dom'
 import { createContext, useState } from 'react'
+import Cart from './Components/Cart'
 
 
 export let myContext = createContext()
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Chief/>}/>
             <Route path='/product/:id' element={<Product/>}/>
+            <Route path='/cart' element={<Cart/>}/>
           </Routes>
       </BrowserRouter>
       </myContext.Provider  >

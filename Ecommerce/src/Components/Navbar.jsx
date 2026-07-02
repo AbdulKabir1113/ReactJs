@@ -33,7 +33,9 @@ const Navbar = () => {
         </NavLink>
       </nav>
       <div>
+        <Link to='/cart'>
         <p className="text-3xl">Cart <sup>{cartProducts.length}</sup></p>
+        </Link>
       </div>
     </header>
   );
